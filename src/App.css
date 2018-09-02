@@ -10,7 +10,9 @@ nav a:active{
 }
 .landingPage{
   color: white !important;
-  margin-top: 1rem;
+  background-color: #04091f;
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%)
+  /* margin-top: 1rem; */
 }
 .img-fluid{
   margin-top: -2rem;
