@@ -2,10 +2,25 @@ nav {
   background-color: #04091f;
   border-bottom: 0.02px solid #e9e9ee;
   padding-left: 10rem;
+  color: white !important;
 }
 nav a{color: white}
 nav a:active{
   border: 1px solid white;
+}
+.landingPage{
+  color: white !important;
+  margin-top: 1rem;
+}
+.img-fluid{
+  margin-top: -2rem;
+  width: 90% !important;
+}
+.meetXrole{
+  font-family: 'Exo', sans-serif;
+  font-size: 2rem;
+  margin-top: 7rem;
+  /* margin-left: 2rem; */
 }
 
 @media (min-width: 992px){
