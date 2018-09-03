@@ -4,6 +4,7 @@ import './index.css';
 import Navbar from './Navbar';
 import LandingPage from './LandingPage';
 import Services from './Services';
+import Parallax from './Parallax';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
@@ -11,6 +12,7 @@ ReactDOM.render(
         <Navbar />
         <LandingPage />
         <Services />
+        <Parallax />
     </div>
     , document.getElementById('root'));
 registerServiceWorker();
