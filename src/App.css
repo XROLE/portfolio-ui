@@ -14,7 +14,7 @@ nav a:active{
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%)
   /* margin-top: 1rem; */
 }
-.img-fluid{
+.landing-image{
   margin-top: -2rem;
   width: 100% !important;
 }
@@ -26,6 +26,21 @@ nav a:active{
 }
 .navbar-toggler{
   background-color: #28a745 !important;
+}
+.web-icon{
+  width: 30%;
+  margin-left: 5rem;
+}
+.serviceContainerFluid{
+  margin-top: -3rem;
+  background-color: white;
+ }
+.serviceContainer{
+  background-color: white;
+  padding: 3rem 5rem !important;
+}
+.educationRow{
+  margin-top: 2rem;
 }
 @media (min-width: 576px) { 
   .meetXrole{
@@ -44,9 +59,12 @@ nav a:active{
   .meetXrole{
     margin-top: 7rem;
   }
-  .img-fluid{
+  .landing-image{
     margin-top: -2rem;
     width: 90% !important;
+  }
+  .web-icon{
+    width: 30%;
   }
 
 }

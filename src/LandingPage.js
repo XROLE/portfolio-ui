@@ -13,7 +13,7 @@ class LandingPage extends Component {
                             <a className ="btn btn-success">Hire Me </a>
                         </div>
                         <div className ="col-12 col-md-6 col-lg-6">
-                            <p className="landingPage-image"><img className ="img-fluid" src = "./images/xrole.png" alt = "landing page image"/></p>
+                            <p className="landingPage-image"><img className ="img-fluid landing-image" src = "./images/xrole.png" alt = "landing page image"/></p>
                         </div>
                     </div>                
                 </div>
