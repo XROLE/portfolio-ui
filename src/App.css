@@ -55,12 +55,23 @@ nav a:active{
   text-align: center;
   color: white;
 }
+.projectContainerFluid{
+  padding-bottom: 5rem !important;
+}
 .projectRow{
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .projectCard{
-  margin-top: 3rem;
-  width:20rem;
+  margin-top: 5rem;
+  width:23rem;
+}
+  .hireme{
+    background:#04091f;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: top;
+    background-repeat: no-repeat;
+    height: 400px;
   }
 @media (min-width: 576px) { 
   .meetXrole{
