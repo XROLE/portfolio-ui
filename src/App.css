@@ -40,8 +40,9 @@ nav a:active{
   padding: 3rem 5rem !important;
 }
 .educationRow{
-  margin-top: 2rem;
+  margin-top: 1rem
 }
+
 @media (min-width: 576px) { 
   .meetXrole{
     /* margin-top: 0rem; */
