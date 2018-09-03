@@ -47,7 +47,6 @@ nav a:active{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 5rem;
 }
 .parralaxText{
   font-family: 'Exo', sans-serif;
@@ -56,6 +55,13 @@ nav a:active{
   text-align: center;
   color: white;
 }
+.projectRow{
+  justify-content: space-around;
+}
+.projectCard{
+  margin-top: 3rem;
+  width:20rem;
+  }
 @media (min-width: 576px) { 
   .meetXrole{
     /* margin-top: 0rem; */
