@@ -12,8 +12,7 @@ nav a:active{
   color: white !important;
   background-color: #04091f;
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
-  /* margin-top: 1rem; */
-}
+  }
 .landing-image{
   margin-top: -2rem;
   width: 100% !important;
@@ -34,7 +33,7 @@ nav a:active{
 .serviceContainerFluid{
   margin-top: -3rem;
   background-color: white;
- }
+  }
 .serviceContainer{
   background-color: white;
   padding: 3rem 5rem !important;
@@ -48,7 +47,7 @@ nav a:active{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  margin-top: 5rem;
 }
 .parralaxText{
   font-family: 'Exo', sans-serif;
