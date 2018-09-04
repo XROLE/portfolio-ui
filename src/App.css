@@ -12,7 +12,7 @@ nav a:active{
 .landingPage{
   color: white !important;
   background-color: #04091f;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 135vh, 0 100%);
   }
 .landing-image{
   margin-top: -2rem;
@@ -134,6 +134,10 @@ margin: 1rem auto !important;
   }
 }
 @media (min-width: 992px){
+  .landingPage{
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  }
+
   .navbar-nav{padding-left: 600px}
   .nav-link{
     padding-right: 1.6rem !important;
