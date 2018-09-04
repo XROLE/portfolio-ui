@@ -77,6 +77,8 @@ nav a:active{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 4rem !important;
+  padding-top: 2rem !important;
 }
 .hiremeForm{
   color: white;
@@ -84,6 +86,7 @@ nav a:active{
   font-family: 'Exo', sans-serif;
   font-size: 1.2rem;
   padding-bottom: 1rem !important;
+
 }
 .hiremeHeader{
   color:#28a745;
@@ -173,7 +176,9 @@ margin: 1rem auto !important;
     margin-left: 3rem;
     line-height: 0.5rem;
   }
-
+  .hireme{
+    padding-bottom: 1.5rem !important;
+  }
 
   .navbar-nav{padding-left: 600px}
   .nav-link{
