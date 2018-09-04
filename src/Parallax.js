@@ -6,8 +6,8 @@ class Parallax extends Component {
         return(
             <div className =" contaner-fluid  parallax">
                 <div className = "container">
-                    <div className = "row">
-                        <div className = "col">
+                    <div className = "row fixMargin">
+                        <div className = "col-12">
                             <p className = "parralaxText"> VIEW SAMPLE PROJECTS BELOW</p>  
                             {/* please fix the parallax isuue later           */}
                         </div>

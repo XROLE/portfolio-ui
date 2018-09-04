@@ -1,4 +1,7 @@
-
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 nav {
   background-color: #04091f;
   border-bottom: 0.02px solid #e9e9ee;
