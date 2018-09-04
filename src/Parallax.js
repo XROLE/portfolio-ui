@@ -8,7 +8,7 @@ class Parallax extends Component {
                 <div className = "container">
                     <div className = "row">
                         <div className = "col">
-                            <p className = "parralaxText"> GET YOUR PROJECT DONE WITHIN 72 HOURS</p>  
+                            <p className = "parralaxText"> VIEW SAMPLE PROJECTS BELOW</p>  
                             {/* please fix the parallax isuue later           */}
                         </div>
                     </div>

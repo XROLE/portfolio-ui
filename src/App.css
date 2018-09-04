@@ -1,3 +1,4 @@
+
 nav {
   background-color: #04091f;
   border-bottom: 0.02px solid #e9e9ee;
@@ -65,14 +66,56 @@ nav a:active{
   margin-top: 5rem;
   width:23rem;
 }
-  .hireme{
-    background:#04091f;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: top;
-    background-repeat: no-repeat;
-    height: 400px;
-  }
+.hireme{
+  background-color: #04091f;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 400px; */
+  margin-bottom: 1rem;
+}
+.hiremeForm{
+  color: white;
+  margin: 1rem 3rem 1rem 3rem;
+  font-family: 'Exo', sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 1rem !important;
+}
+.hiremeHeader{
+  color:#28a745;
+  font-family: 'Exo', sans-serif;
+  font-size: 2rem;
+  
+}
+input {
+  background-color: transparent;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+}
+textarea{
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+}
+.hirmeButton {
+  background-color: #28a745 !important;
+  border-color: #28a745;
+ }
+ .webNumberAddress{
+   color: white;
+   border-bottom: 1px dotted #28a745;
+   width: 200px;
+   font-size: 1.4rem;
+   margin-top: 2rem;
+   margin-left: 5rem;
+ }
+.webNumberAddress-contents{
+  color: white;
+  margin-left: 5rem;
+  line-height: 0.5rem;
+}
 @media (min-width: 576px) { 
   .meetXrole{
     /* margin-top: 0rem; */
