@@ -138,8 +138,11 @@ margin: 1rem auto !important;
   margin: 1rem auto;
   text-align: center;
   font-size: 1.5rem !important;
+  color: white !important;
 }
-
+.footericon a{
+  color: white !important;
+}
 /*=============================================================== DESKTOP  */
 @media (min-width: 992px){
   .landingPage{
