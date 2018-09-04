@@ -8,7 +8,11 @@ class Footer extends Component {
                 <div className = "container">
                     <div className = "row">
                         <div className ="col">
-                            <p className="footericon"> <i class="fab fa-twitter"></i> &nbsp; &nbsp; <i class="fab fa-facebook-f"> </i> &nbsp;  &nbsp; <i class="fab fa-whatsapp"></i> &nbsp;  &nbsp; <i class="fab fa-slack"></i>&nbsp;  &nbsp; <i class="fab fa-github"></i></p>     
+                            <p className="footericon">
+                            <a href = "https://twitter.com/diamondpix6706" target ="_blank"> <i class="fab fa-twitter"> </i></a> &nbsp; &nbsp; 
+                            <a href = "https://web.facebook.com/profile.php?id=100019388493146" target = "_blank"><i class="fab fa-facebook-f"> </i></a> &nbsp;  &nbsp; 
+                            <a href ="https://github.com/XROLE" target = "_blank"> <i class="fab fa-slack"></i> </a>&nbsp;  &nbsp;
+                            <a href ="https://github.com/XROLE" target = "_blank"> <i class="fab fa-github"></i></a></p>     
                         </div>                        
                     </div>
                 </div>
