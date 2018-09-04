@@ -143,6 +143,11 @@ margin: 1rem auto !important;
 .footericon a{
   color: white !important;
 }
+.projectCard:hover{
+  width: 25rem;
+  transition: width 1s;
+
+}
 /*=============================================================== DESKTOP  */
 @media (min-width: 992px){
   .landingPage{
@@ -164,7 +169,7 @@ margin: 1rem auto !important;
   }
   .projectCard{
     margin-top: 5rem;
-    width:23rem;
+    width:22rem;
   }
   .projectRow{
     justify-content: space-between;
