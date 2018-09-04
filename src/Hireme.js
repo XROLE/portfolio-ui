@@ -2,6 +2,22 @@ import React, { Component } from 'react';
 import './App.css';
 
 class Hireme extends Component{
+    signUp(e){
+        // getting form data
+        const email = this.refs.email.value;
+        const number = this.refs.number.value;
+        const description = this.refs.description.value;
+        alert(email +' ' + number+ ' ' + description);
+        console.log('email: ' + email + '  Phone Number: ' + number + ' Description: ' + description);
+    }
+    constructor(props){
+        super(props);
+        this.state = {
+            submited: false,
+            success: "Thanks for getting in touch. I will get back to you in soon. "
+        }
+        this.signUp = this.signUp.bind(this);
+    }
     render(){
         return(
             <div className = "container-fluid hireme">
@@ -12,18 +28,18 @@ class Hireme extends Component{
                                 <p className ='text-center hiremeHeader' id ="Hireme">HIRE ME</p>
                                 <div className ="form-group">
                                     <label>Email</label>
-                                    <input type = "text" className = "form-control bg-transparent text-white" placeholder = "example@gmail.com" />
+                                    <input type = "text" ref = "email" className = "form-control bg-transparent text-white" placeholder = "example@gmail.com" />
                                 </div>
                                 <div className ="form-group">
                                     <label>Phone Number</label>
-                                    <input type = "number" className = "form-control bg-transparent text-white" placeholder ="+23470 ..." />
+                                    <input type = "number" ref = "number" className = "form-control bg-transparent text-white" placeholder ="+23470 ..." />
                                 </div>
                                 <div className ="form-group">
                                     <label>Description of Project</label>
-                                   <textarea className = "form-control bg-transparent text-white" placeholder = "I need you to build a webapp that will .... "></textarea>
+                                   <textarea ref = "description" className = "form-control bg-transparent text-white" placeholder = "I need you to build a webapp that will .... "></textarea>
                                 </div>
                                 <div className ="form-group">
-                                    <button className = "btn btn-primary hirmeButton">Submit</button>
+                                    <button className = "btn btn-primary hirmeButton" onClick = {this.signUp}>Submit</button>
                                 </div>
                                 
                             </form>
