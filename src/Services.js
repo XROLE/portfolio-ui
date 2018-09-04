@@ -14,7 +14,7 @@ class Services extends Component{
                             <h3>Web Development</h3>
                             <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
                             {/* <a className ="btn btn-success text-white"> Hire Me </a> &nbsp;  */}
-                            <a className ="btn btn-primary text-white"> Get Intouch </a>
+                            <a className ="btn btn-primary text-white" href = "#Hireme"> Get Intouch </a>
                         </div>                        
                     </div>
                     <div className = "row educationRow">
@@ -25,7 +25,7 @@ class Services extends Component{
                             <h3>Facilitator and Mentorship</h3>
                             <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
                             {/* <a className ="btn btn-success text-white"> Hire Me </a> &nbsp;  */}
-                            <a className ="btn btn-primary text-white"> Get Intouch </a>
+                            <a className ="btn btn-primary text-white" href ="#Hireme"> Get Intouch </a>
                         </div>
                     </div>
                 </div>
