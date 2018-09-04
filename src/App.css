@@ -52,7 +52,8 @@ nav a:active{
 }
 .parralaxText{
   font-family: 'Exo', sans-serif;
-  font-size: 2rem;
+  padding: 0 1rem;
+  font-size: 1.5rem;
   margin-top: 5rem;
   text-align: center;
   color: white;
@@ -140,13 +141,14 @@ margin: 1rem auto !important;
     padding: 0;
   }
   .meetXrole{
-    font-family: 'Exo', sans-serif;
     font-size: 2rem;
     margin-top: 2rem;
   }
   .serviceContainer{
-    background-color: white;
     padding: 3rem 5rem !important;
+  }
+  .parralaxText{
+     font-size: 2rem;
   }
 
   .navbar-nav{padding-left: 600px}
