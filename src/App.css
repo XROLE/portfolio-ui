@@ -120,7 +120,12 @@ textarea{
   border-top: 1px dotted white;
 }
 .footerText{
-margin: 1rem auto;
+margin: 1rem auto !important;
+}
+.footericon{
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.5rem !important;
 }
 @media (min-width: 576px) { 
   .meetXrole{

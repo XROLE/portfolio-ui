@@ -7,8 +7,16 @@ class Footer extends Component {
             <div className = "container-fluid footerContainerFluid">
                 <div className = "container">
                     <div className = "row">
-                        <div className ="text-center"></div>
-                        <p className="text-center footerText">&copy; xrole 2018</p>     
+                        <div className ="col">
+                            <p className="footericon"> <i class="fab fa-twitter"></i> &nbsp; &nbsp; <i class="fab fa-facebook-f"> </i> &nbsp;  &nbsp; <i class="fab fa-whatsapp"></i> &nbsp;  &nbsp; <i class="fab fa-slack"></i>&nbsp;  &nbsp; <i class="fab fa-github"></i></p>     
+                        </div>                        
+                    </div>
+                </div>
+                <div className = "container">
+                    <div className = "row">
+                        <div className ="col text-center">
+                            <p className=" footerText">&copy; xrole 2018</p>     
+                        </div>                        
                     </div>
                 </div>
             </div>
