@@ -4,7 +4,7 @@ import './App.css';
 class LandingPage extends Component {
     render(){
         return (
-            <div className = 'container-fluid landingPage'>
+            <div className = 'container-fluid landingPage' id = "LandingPage">
                 <div className ="container">
                     <div className='row' >
                         <div className ="col-12 col-md-6 col-lg-6">

@@ -4,7 +4,7 @@ import './App.css';
 class Services extends Component{
     render(){
         return(
-            <div className="container-fluid serviceContainerFluid ">
+            <div className="container-fluid serviceContainerFluid " id = "Services">
                 <div className ="container serviceContainer">
                     <div className="row">
                         <div className = "col-12 col-md-6 col-lg-6"> 

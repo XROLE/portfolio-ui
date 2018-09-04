@@ -4,7 +4,7 @@ import './App.css';
 class Projects extends Component{
     render(){
         return(
-            <div className = "container-fluid bg-white projectContainerFluid">
+            <div className = "container-fluid bg-white projectContainerFluid" >
                 <div className ="container">
                     <div className = "row projectRow">
                         <div class="card projectCard">

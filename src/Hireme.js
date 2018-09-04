@@ -9,7 +9,7 @@ class Hireme extends Component{
                     <div className = "row">
                         <div class = "col-12 col-md-6 col-lg-6">
                             <form className = "hiremeForm">
-                                <p className ='text-center hiremeHeader'>HIRE ME</p>
+                                <p className ='text-center hiremeHeader' id ="Hireme">HIRE ME</p>
                                 <div className ="form-group">
                                     <label>Email</label>
                                     <input type = "text" className = "form-control bg-transparent text-white" placeholder = "example@gmail.com" />
