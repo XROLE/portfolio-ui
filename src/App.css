@@ -12,17 +12,18 @@ nav a:active{
 .landingPage{
   color: white !important;
   background-color: #04091f;
-  clip-path: polygon(0 0, 100% 0, 100% 135vh, 0 100%);
+  padding: 3rem 1rem 0rem 2.5rem !important;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+  .meetXrole{
+    font-family: 'Exo', sans-serif;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    /* margin-left: 2rem; */
   }
 .landing-image{
   margin-top: -2rem;
   width: 100% !important;
-}
-.meetXrole{
-  font-family: 'Exo', sans-serif;
-  font-size: 2rem;
-  margin-top: 2rem;
-  /* margin-left: 2rem; */
 }
 .navbar-toggler{
   background-color: #28a745 !important;
@@ -136,6 +137,12 @@ margin: 1rem auto !important;
 @media (min-width: 992px){
   .landingPage{
     clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    padding: 0;
+  }
+  .meetXrole{
+    font-family: 'Exo', sans-serif;
+    font-size: 2rem;
+    margin-top: 2rem;
   }
 
   .navbar-nav{padding-left: 600px}
