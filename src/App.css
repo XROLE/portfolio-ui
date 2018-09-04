@@ -72,8 +72,6 @@ nav a:active{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* height: 400px; */
-  margin-bottom: 1rem;
 }
 .hiremeForm{
   color: white;
@@ -115,6 +113,14 @@ textarea{
   color: white;
   margin-left: 5rem;
   line-height: 0.5rem;
+}
+.footerContainerFluid{
+  color: white;
+  background-color: #04091f;
+  border-top: 1px dotted white;
+}
+.footerText{
+margin: 1rem auto;
 }
 @media (min-width: 576px) { 
   .meetXrole{
