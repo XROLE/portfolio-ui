@@ -59,14 +59,14 @@ nav a:active{
   color: white;
 }
 .projectContainerFluid{
-  padding-bottom: 5rem !important;
+  padding-bottom: 1.5rem !important;
 }
 .projectRow{
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .projectCard{
-  margin-top: 5rem;
-  width:23rem;
+  margin-top: 2rem;
+  width:20rem;
 }
 .hireme{
   background-color: #04091f;
@@ -150,7 +150,16 @@ margin: 1rem auto !important;
   .parralaxText{
      font-size: 2rem;
   }
-
+  .projectContainerFluid{
+    padding-bottom: 5rem !important;
+  }
+  .projectCard{
+    margin-top: 5rem;
+    width:23rem;
+  }
+  .projectRow{
+    justify-content: space-between;
+  }
   .navbar-nav{padding-left: 600px}
   .nav-link{
     padding-right: 1.6rem !important;
