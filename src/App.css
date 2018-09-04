@@ -29,7 +29,7 @@ nav a:active{
   background-color: #28a745 !important;
 }
 .web-icon{
-  width: 30%;
+  width: 35%;
   margin-left: 5rem;
 }
 .serviceContainerFluid{
@@ -38,7 +38,7 @@ nav a:active{
   }
 .serviceContainer{
   background-color: white;
-  padding: 3rem 5rem !important;
+  padding: 3rem 2rem !important;
 }
 .educationRow{
   margin-top: 2rem
@@ -143,6 +143,10 @@ margin: 1rem auto !important;
     font-family: 'Exo', sans-serif;
     font-size: 2rem;
     margin-top: 2rem;
+  }
+  .serviceContainer{
+    background-color: white;
+    padding: 3rem 5rem !important;
   }
 
   .navbar-nav{padding-left: 600px}
