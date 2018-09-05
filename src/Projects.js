@@ -7,7 +7,7 @@ class Projects extends Component{
             <div className = "container-fluid bg-white projectContainerFluid" >
                 <div className ="container">
                     <div className = "row projectRow">
-                        <div class="card projectCard">
+                        <div className="card projectCard">
                             <a href = "https://xrole.github.io/CurrencyConverter/" target = "_blank">
                                 <img className="card-img-top" src='./images/currencyConverter.png' alt="Card image cap" />
                             </a>

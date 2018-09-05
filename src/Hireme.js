@@ -25,6 +25,7 @@ class Hireme extends Component{
                 fetch(url, { // POST DATA TO THE DATABASE
                     method: 'POST',
                     body: data,
+                    mode: 'no-cors',
                     headers: {
                         'Content-type': 'application/json'
                     }
