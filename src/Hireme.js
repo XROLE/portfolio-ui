@@ -1,19 +1,39 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
 class Hireme extends Component{
     signUp(e){
         // getting form data
-        const email = this.refs.email.value;
-        const number = this.refs.number.value;
-        const description = this.refs.description.value;
-        alert(email +' ' + number+ ' ' + description);
-        console.log('email: ' + email + '  Phone Number: ' + number + ' Description: ' + description);
+        const email = this.refs.email.value.toLowerCase();
+        const number = this.refs.number;
+        const desc = this.refs.description.value;
+       
+        const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(!email && !number && !desc){ //========= validating phone number
+            this.setState(({error: this.state.error.concat('Email, Phone Number and Description fields can not be empty! ')}))
+        }else if(!email || !number || !desc){
+            this.setState(({error: this.state.error.concat('No empty field is allowed. Please make sure all the fields are filled before submitting')}))
+        }else if(emailRegex.test(email) === false){
+            this.setState(({error: this.state.error.concat('Please enter a valid email')}))
+        }else if(number.length < 11){
+            this.setState(({error: this.state.error.concat('Phone Number is not complete ')}))
+        }else if(number.length > 11){
+            this.setState(({error: this.state.error.concat('Phone Number is too long')}))
+        }
+
+        // Outputing the error messages
+        if(this.state.error.length){
+            alert(this.state.error)
+            this.setState(({error: []}));
+        }
+
     }
     constructor(props){
         super(props);
         this.state = {
             submited: false,
+            error: [],
             success: "Thanks for getting in touch. I will get back to you in soon. "
         }
         this.signUp = this.signUp.bind(this);
