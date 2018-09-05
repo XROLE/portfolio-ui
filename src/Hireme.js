@@ -12,7 +12,7 @@ class Hireme extends Component{
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         
         if(!email || !number || !desc){ //Validatin form data
-                this.setState(({message: this.state.message.concat('No empty field is allowed. Please make sure all the fields are filled before submitting')}))
+               this.setState(({message: this.state.message.concat('No empty field is allowed. Please make sure all the fields are filled before submitting')}))
             }else if(emailRegex.test(email) === false){
                 this.setState(({message: this.state.message.concat('Please enter a valid email')}))
             }else if(number.length < 11){
