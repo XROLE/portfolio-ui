@@ -28,6 +28,7 @@ class Hireme extends Component{
         }
         if(this.state.success.length){ // CLEAR SUCCESS MESSAGE
             this.setState(({success: []}));
+            window.location.reload(true);
         }
 
 
