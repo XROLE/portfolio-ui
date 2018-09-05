@@ -5,36 +5,39 @@ import './App.css';
 class Hireme extends Component{
     signUp(e){
         // getting form data
-        const email = this.refs.email.value.toLowerCase();
-        const number = this.refs.number;
-        const desc = this.refs.description.value;
-       
+        e.preventDefault();
+        const email = this.refs.email.value.trim().toLowerCase();
+        const number = this.refs.number.value;
+        const desc = this.refs.description.value.trim();
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(!email && !number && !desc){ //========= validating phone number
-            this.setState(({error: this.state.error.concat('Email, Phone Number and Description fields can not be empty! ')}))
-        }else if(!email || !number || !desc){
-            this.setState(({error: this.state.error.concat('No empty field is allowed. Please make sure all the fields are filled before submitting')}))
-        }else if(emailRegex.test(email) === false){
-            this.setState(({error: this.state.error.concat('Please enter a valid email')}))
-        }else if(number.length < 11){
-            this.setState(({error: this.state.error.concat('Phone Number is not complete ')}))
-        }else if(number.length > 11){
-            this.setState(({error: this.state.error.concat('Phone Number is too long')}))
+        
+        if(!email || !number || !desc){ //Validatin form data
+                this.setState(({message: this.state.message.concat('No empty field is allowed. Please make sure all the fields are filled before submitting')}))
+            }else if(emailRegex.test(email) === false){
+                this.setState(({message: this.state.message.concat('Please enter a valid email')}))
+            }else if(number.length < 11){
+                this.setState(({message: this.state.message.concat('Phone Number is not complete')}))
+            }else if(number.length > 11){
+                this.setState(({message: this.state.message.concat('Phone Number is too long')}))
+            }else{
+                this.setState(({success: this.state.success.concat('Thanks for getting in touch. I will get back to you soon.')}))
+        }    
+
+        if(this.state.message.length){ // CLEAR ERROR MESSAGE AFTER OUTPUTTING IT TO THE USER
+           this.setState(({message: []}));
+        }
+        if(this.state.success.length){ // CLEAR SUCCESS MESSAGE
+            this.setState(({success: []}));
         }
 
-        // Outputing the error messages
-        if(this.state.error.length){
-            alert(this.state.error)
-            this.setState(({error: []}));
-        }
 
     }
     constructor(props){
         super(props);
         this.state = {
             submited: false,
-            error: [],
-            success: "Thanks for getting in touch. I will get back to you in soon. "
+            message: [],
+            success: []
         }
         this.signUp = this.signUp.bind(this);
     }
@@ -59,10 +62,26 @@ class Hireme extends Component{
                                    <textarea ref = "description" className = "form-control bg-transparent text-white" placeholder = "I need you to build a webapp that will .... "></textarea>
                                 </div>
                                 <div className ="form-group">
-                                    <button className = "btn btn-primary hirmeButton" onClick = {this.signUp}>Submit</button>
+                                    <button className = "btn btn-primary hirmeButton" onClick={this.signUp}>Submit</button>
                                 </div>
                                 <div className ='formgroup' style = {{color:"red", fontSize: "0.8rem"}}>
-                                    <p>No empty field is allowed. Please make sure all the fields are filled before submitting</p>
+                                    <ul id = "Messages">
+                                        { 
+                                            this.state.message.map((msg) => {
+                                               return <li>{msg}</li>
+                                            })
+                                            
+
+                                        }
+                                    </ul>
+                                        {
+                                            this.state.success.map((success) => {
+                                                return <li className = "text-success">{ success }</li>
+                                            })
+                                        }
+                                    <ul>
+                                        
+                                    </ul>
                                 </div>
                             </form>
                         </div>
