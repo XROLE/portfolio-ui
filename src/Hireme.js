@@ -61,7 +61,9 @@ class Hireme extends Component{
                                 <div className ="form-group">
                                     <button className = "btn btn-primary hirmeButton" onClick = {this.signUp}>Submit</button>
                                 </div>
-                                
+                                <div className ='formgroup' style = {{color:"red", fontSize: "0.8rem"}}>
+                                    <p>No empty field is allowed. Please make sure all the fields are filled before submitting</p>
+                                </div>
                             </form>
                         </div>
                             <div class = "col-12 col-md-6 col-lg-6">
