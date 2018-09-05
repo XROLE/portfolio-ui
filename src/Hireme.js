@@ -81,7 +81,7 @@ class Hireme extends Component{
                                     <ul id = "Messages">
                                         { 
                                             this.state.message.map((msg) => {
-                                               return <li>{msg}</li>
+                                               return <li key = {msg}>{msg}</li>
                                             })
                                             
 
@@ -89,7 +89,7 @@ class Hireme extends Component{
                                     </ul>
                                         {
                                             this.state.success.map((success) => {
-                                                return <li className = "text-success">{ success }</li>
+                                                return <li key ={success} className = "text-success">{ success }</li>
                                             })
                                         }
                                     <ul>
