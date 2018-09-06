@@ -8,7 +8,8 @@ class Hireme extends Component{
         e.preventDefault();
         const email = this.refs.email.value.trim().toLowerCase();
         const number = this.refs.number.value;
-        const desc = this.refs.description.value.trim();
+        const desc = this.refs.desc.value.trim();
+        const name = 'client';
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         
         if(!email || !number || !desc){ //Validatin form data
@@ -20,17 +21,18 @@ class Hireme extends Component{
             }else if(number.length > 11){
                 this.setState(({message: this.state.message.concat('Phone Number is too long')}))
             }else{
-                const url = 'https://x-portfolio.herokuapp.com/portfolio/views';
-                const data = { email: email, name: 'client', message: desc };
+                const url = 'http://localhost:5000/portfolio/views';
+                const data = { email: email, name: name, message: desc };
+
                 fetch(url, { // POST DATA TO THE DATABASE
                     method: 'POST',
-                    body: data,
-                    mode: 'no-cors',
+                    body: JSON.stringify(data),
                     headers: {
+                        'Accept': 'application/json, text/plain, */*',
                         'Content-type': 'application/json'
                     }
                 })
-                .then(res => alert(JSON.stringify(res)))
+                .then(res => console.log(JSON.stringify(res)))
                 .catch(err => console.error('Error :', err));
                 // UPDATE THE SUCCESS STATE
                 this.setState(({success: this.state.success.concat('Thanks for getting in touch. I will get back to you soon.')}))
@@ -73,7 +75,7 @@ class Hireme extends Component{
                                 </div>
                                 <div className ="form-group">
                                     <label>Description of Project</label>
-                                   <textarea ref = "description" className = "form-control bg-transparent text-white" placeholder = "I need you to build a webapp that will .... "></textarea>
+                                   <textarea ref = "desc" className = "form-control bg-transparent text-white" placeholder = "I need you to build a webapp that will .... "></textarea>
                                 </div>
                                 <div className ="form-group">
                                     <button className = "btn btn-primary hirmeButton" onClick={this.signUp}>Submit</button>
