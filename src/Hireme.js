@@ -21,7 +21,7 @@ class Hireme extends Component{
             }else if(number.length > 11){
                 this.setState(({message: this.state.message.concat('Phone Number is too long')}))
             }else{
-                const url = 'http://localhost:5000/portfolio/views';
+                const url = 'https://x-portfolio.herokuapp.com/portfolio/views';
                 const data = { email: email, name: name, message: desc };
 
                 fetch(url, { // POST DATA TO THE DATABASE
