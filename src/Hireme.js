@@ -35,15 +35,15 @@ class Hireme extends Component{
                 .then(res => console.log(JSON.stringify(res)))
                 .catch(err => console.error('Error :', err));
                 // UPDATE THE SUCCESS STATE
+                alert('Thanks for getting in touch. I will get back to you soon.');
+                window.location.reload(true);
                 this.setState(({success: this.state.success.concat('Thanks for getting in touch. I will get back to you soon.')}))
-        }    
-
+        } 
         if(this.state.message.length){ // CLEAR ERROR MESSAGE AFTER OUTPUTTING IT TO THE USER
            this.setState(({message: []}));
         }
-        if(this.state.success.length){ // CLEAR SUCCESS MESSAGE
+        if(this.state.success.length){ // CLEAR SUCCESS MESSAGE            
             this.setState(({success: []}));
-            window.location.reload(true);
         }
 
 
