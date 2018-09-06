@@ -32,8 +32,10 @@ class Hireme extends Component{
                         'Content-type': 'application/json'
                     }
                 })
-                .then(res => console.log(JSON.stringify(res)))
+                .then(res => res)
+                .then(res => console.log(JSON.stringify(res.body)))
                 .catch(err => console.error('Error :', err));
+                
                 // UPDATE THE SUCCESS STATE
                 alert('Thanks for getting in touch. I will get back to you soon.');
                 window.location.reload(true);
