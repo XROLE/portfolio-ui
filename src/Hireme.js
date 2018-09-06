@@ -32,8 +32,8 @@ class Hireme extends Component{
                         'Content-type': 'application/json'
                     }
                 })
-                .then(res => res)
-                .then(res => console.log(JSON.stringify(res.body)))
+                .then(res => res.json())
+                .then(res => console.log(JSON.stringify(res)))
                 .catch(err => console.error('Error :', err));
                 
                 // UPDATE THE SUCCESS STATE
