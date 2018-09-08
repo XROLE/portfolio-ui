@@ -37,7 +37,7 @@ class Hireme extends Component{
                 .catch(err => console.error('Error :', err));
                 
                 // UPDATE THE SUCCESS STATE
-                alert('Thanks for getting in touch. I will get back to you soon.');
+                alert('Please proceed to your mail for a confirmation message. Thanks');
                 window.location.reload(true);
                 this.setState(({success: this.state.success.concat('Thanks for getting in touch. I will get back to you soon.')}))
         } 
